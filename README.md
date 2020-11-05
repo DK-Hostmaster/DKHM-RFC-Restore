@@ -192,7 +192,7 @@ Example is lifted from [RFC:3915].
 <a id="xsd-definition"></a>
 ## XSD Definition
 
-The `restore` command is an extension to `update domain`. All is described in [RFC:3915]. The XSD has been included in our EPP XSD repository as `rgs-1.0.xsd` all lifted from [RFC:3915], please see [the repositor][DKHMXSD4.1] for details.
+The `restore` command is an extension to `update domain`. All is described in [RFC:3915]. The XSD has been included in our EPP XSD repository as `rgs-1.0.xsd` all lifted from [RFC:3915], please see [the repository][DKHMXSD4.1] for details.
 
 :warning: The EPP XSD and the files mentioned above is not released at this time, so this file might be re-versioned upon release.
 
