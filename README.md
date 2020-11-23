@@ -66,7 +66,7 @@ This document is copyright by DK Hostmaster A/S and is licensed under the MIT Li
 
 All example XML files are available in the [DK Hostmaster EPP XSD repository][DKHMXSDSPEC].
 
-The XSD changes are found in the extension specified in [RFC:3915], so the XSD defition is available in a separate file names [rgp-1.0.xsd][RGP1.0]. We have updated the version of our XSD, eventhough no changes are made to the DKHM XSD definition, but we want to communicate the inclusion and use of the external XSD definition.
+The XSD changes are found in the extension specified in [RFC:3915], so the XSD definition is available in a separate file named [rgp-1.0.xsd][RGP1.0]. We have updated the version of our XSD, even though no changes are made to the DKHM XSD definition, but we want to communicate the inclusion and use of the external XSD definition.
 
 The proposed extensions and XSD definitions are available in the version [4.1][DKHMXSD4.1] revision of the DK Hostmaster XSD, which is currently a draft and work in progress and marked as a  _pre-release_.
 
