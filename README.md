@@ -53,6 +53,11 @@ This document is copyright by DK Hostmaster A/S and is licensed under the MIT Li
 <a id="document-history"></a>
 ### Document History
 
+- 1.2 2020-11-23
+  - Addition of additional links to resources
+  - Correction to links pointing to redundant resources
+  - Minor rephrasing and clarifications
+
 - 1.0 2020-11-05
   - Initial revision
 
@@ -61,7 +66,9 @@ This document is copyright by DK Hostmaster A/S and is licensed under the MIT Li
 
 All example XML files are available in the [DK Hostmaster EPP XSD repository][DKHMXSDSPEC].
 
-The proposed extensions and XSD definitions are available in the  [4.1 candidate][DKHMXSD4.1] revision of the DK Hostmaster XSD, which is currently a draft and work in progress and marked as a  _pre-release_.
+The XSD changes are found in the extension specified in [RFC:3915], so the XSD defition is available in a separate file names [rgp-1.0.xsd][RGP1.0]. We have updated the version of our XSD, eventhough no changes are made to the DKHM XSD definition, but we want to communicate the inclusion and use of the external XSD definition.
+
+The proposed extensions and XSD definitions are available in the version [4.1][DKHMXSD4.1] revision of the DK Hostmaster XSD, which is currently a draft and work in progress and marked as a  _pre-release_.
 
 <a id="description"></a>
 ## Description
@@ -194,27 +201,29 @@ Example is lifted from [RFC:3915].
 
 The `restore` command is an extension to `update domain`. All is described in [RFC:3915]. The XSD has been included in our EPP XSD repository as `rgs-1.0.xsd` all lifted from [RFC:3915], please see [the repository][DKHMXSD4.1] for details.
 
-:warning: The EPP XSD and the files mentioned above is not released at this time, so this file might be re-versioned upon release.
+The referenced XSD version is not deployed at this time and is only available in the [EPP XSD repository][DKHMXSDSPEC], it might be surpassed by a newer version upon deployment of the EPP service implementing the proposal, please refer to the revision of [EPP Service Specification][DKHMEPPSPEC] describing the implementation.
 
 <a id="references"></a>
 ## References
 
-- [DK Hostmaster EPP Service Specification][DKHMEPPSPEC]
-- [DK Hostmaster EPP Service XSD Repository][DKHMXSDSPEC]
-- [DKHM RFC for Prepaid account information with the EPP Service][DKHMRFCPREPAID]
-- [DKHM RFC for Delete Domain EPP Command][DKHMRFCDELETE]
-- [RFC:3915 "Domain Registry Grace Period Mapping for the Extensible Provisioning Protocol (EPP)"][RFC:3915]
-- [RFC:5730 "Extensible Provisioning Protocol (EPP)"][RFC:5730]
-- [RFC:5731 "Extensible Provisioning Protocol (EPP) Domain Name Mapping"][RFC:5731]
-- [RFC:8748 "Registry Fee Extension for the Extensible Provisioning Protocol (EPP)][RFC:8748]
+1. ["New basis for collaboration between registrars and DK Hostmaster"][CONCEPT]
+1. [DK Hostmaster EPP Service Specification][DKHMEPPSPEC]
+1. [DK Hostmaster EPP Service XSD Repository][DKHMXSDSPEC]
+1. [DKHM RFC for Prepaid account information with the EPP Service][DKHMRFCPREPAID]
+1. [DKHM RFC for Delete Domain EPP Command][DKHMRFCDELETE]
+1. [RFC:3915 "Domain Registry Grace Period Mapping for the Extensible Provisioning Protocol (EPP)"][RFC:3915]
+1. [RFC:5730 "Extensible Provisioning Protocol (EPP)"][RFC:5730]
+1. [RFC:5731 "Extensible Provisioning Protocol (EPP) Domain Name Mapping"][RFC:5731]
+1. [RFC:8748 "Registry Fee Extension for the Extensible Provisioning Protocol (EPP)][RFC:8748]
 
-[RFC:3915]: https://tools.ietf.org/html/rfc3915.html
-[RFC:5730]: https://www.rfc-editor.org/rfc/rfc5730.html
-[RFC:5731]: https://www.rfc-editor.org/rfc/rfc5731.html
-[RFC:8748]: https://tools.ietf.org/html/rfc8748.html
+[CONCEPT]: https://www.dk-hostmaster.dk/en/new-basis-collaboration-between-registrars-and-dk-hostmaster
 [DKHMEPPSPEC]: https://github.com/DK-Hostmaster/epp-service-specification
 [DKHMXSDSPEC]: https://github.com/DK-Hostmaster/epp-xsd-files
 [DKHMRFCPREPAID]: https://github.com/DK-Hostmaster/DKHM-RFC-Prepaid
 [DKHMRFCDELETE]: https://github.com/DK-Hostmaster/DKHM-RFC-Delete-Domain
-[CONCEPT]: https://www.dk-hostmaster.dk/en/new-basis-collaboration-between-registrars-and-dk-hostmaster
-[DKHMXSD4.1]: https://github.com/DK-Hostmaster/epp-xsd-files/tree/4.1-candidate
+[RFC:3915]: https://tools.ietf.org/html/rfc3915.html
+[RFC:5730]: https://www.rfc-editor.org/rfc/rfc5730.html
+[RFC:5731]: https://www.rfc-editor.org/rfc/rfc5731.html
+[RFC:8748]: https://tools.ietf.org/html/rfc8748.html
+[DKHMXSD4.1]: https://github.com/DK-Hostmaster/epp-xsd-files/blob/master/dkhm-4.1.xsd
+[RGP1.0]: https://github.com/DK-Hostmaster/epp-xsd-files/blob/master/rgp-1.0.xsd
